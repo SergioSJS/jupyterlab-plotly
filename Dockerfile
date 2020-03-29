@@ -14,6 +14,7 @@ USER root
 RUN export NODE_OPTIONS=--max-old-space-size=4096
 RUN jupyter labextension install @jupyter-widgets/jupyterlab-manager@1.1 --no-build
 RUN jupyter labextension install plotlywidget@1.5.4 --no-build
+RUN jupyter labextension install jupyterlab-plotly@1.5.4 --no-build
 RUN jupyter labextension install @mohirio/jupyterlab-horizon-theme@1.2.1 --no-build
 RUN jupyter lab build
 RUN npm cache clean --force && \
