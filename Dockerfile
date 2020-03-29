@@ -6,7 +6,6 @@ RUN pip install --no-cache-dir \
     'numpy==1.16.4' \
     'plotly==4.5.4' \
     'matplotlib==3.1.0' \
-    'mne==0.18.1' \
     'ipywidgets==7.5' 
 RUN pip install -U jupyterlab==1.2 
 RUN conda clean --all -f -y
